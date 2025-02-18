@@ -1,2 +1,3 @@
-var message = "hello world";
-console.log(message);
+var city = ['Delhi', 'Mumbai', 'Kolkata', 'Chennai'];
+city.push('Bangalore');
+console.log(city);

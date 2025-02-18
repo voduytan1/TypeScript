@@ -1,2 +1,3 @@
-const message: string = "hello world";
-console.log(message);
+let city = ['Delhi', 'Mumbai', 'Kolkata', 'Chennai'];
+city.push('Bangalore');
+console.log(city)
