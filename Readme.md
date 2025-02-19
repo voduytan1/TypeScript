@@ -14,10 +14,11 @@ Nếu không khai báo và cũng không khởi tạo giá trị cho biến thì 
 **Cách thức hoạt động của Prototype Chain**
 1. Khi bạn truy cập một thuộc tính của đối tượng, JavaScript sẽ kiểm tra xem thuộc tính đó có tồn tại trong chính đối tượng hay không.
 2. Nếu không, JavaScript sẽ kiểm tra trong prototype của đối tượng đó (đối tượng mà nó kế thừa từ).
-3.Nếu vẫn không tìm thấy, nó tiếp tục tìm trong prototype của prototype (cấp trên nữa), và cứ thế cho đến khi nó tìm thấy hoặc không còn gì để tìm (đạt đến null).
+3. Nếu vẫn không tìm thấy, nó tiếp tục tìm trong prototype của prototype (cấp trên nữa), và cứ thế cho đến khi nó tìm thấy hoặc không còn gì để tìm (đạt đến null).
 
-- Ví dụ, ta có một mô hình:
+4. Ví dụ, ta có một mô hình:
 Tesla -> Human.prototype -> Animal.prototype -> Object.prototype -> null
+
 Giả sử thuộc tính live() thuộc object Animal thì khi ta truy cập thuộc tính live() ở thực thể Tesla, JavaScript sẽ kiểm tra thuộc tính live() trong object Human, nếu không có sẽ tìm đến Animal 
 và cứ thế nếu tìm đến null vẫn không tìm thấy thì thuộc tính đó không có sẵn cho thực thể Tesla và sẽ trả về null 
 
@@ -30,7 +31,7 @@ và cứ thế nếu tìm đến null vẫn không tìm thấy thì thuộc tín
 
 `console.log(typeof num);  // "number" (Trước khi gọi phương thức)`
 
-`// Gọi phương thức toFixed() trên num``
+`// Gọi phương thức toFixed() trên num`
 `let result = num.toFixed(2);  // "42.00" (Kết quả là một chuỗi)`
 
 `// Kiểm tra lại kiểu dữ liệu của num`
@@ -48,7 +49,9 @@ có thể nhận nút xuống dòng trong string
 ## Update 3 - OBJECT TYPE 
 
 kiểu "{}" không có nghĩa là một object, kí hiệu "{}" đề cập đến bất kỳ giá trị non-null nào số thuộc tính là 0 hoặc nhiều hơn
+
 Ví dụ: Các Primitive type ( kiểu dữ liệu nguyên thủy) như string "Hello world" có thuộc tính length và là một non-null value nên chuỗi trên là một {}.
+
 Source: https://github.com/microsoft/TypeScript/wiki/FAQ#--does-not-refer-to-objects-with-no-properties
 
 
