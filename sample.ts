@@ -1,10 +1,14 @@
-let num = 42
+class Person {
+    name: string;
+    age: number;
+    constructor(name: string, age: number) {
+        this.name = name;
+        this.age = age;
+    }
+    greet() {
+        console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+    }
+}
 
-console.log(typeof num);  // "number" (Trước khi gọi phương thức)
-
-// Gọi phương thức toFixed() trên num
-let result = num.toFixed(2);  // "42.00" (Kết quả là một chuỗi)
-
-// Kiểm tra lại kiểu dữ liệu của num
-console.log(typeof num);  // "number" (Kiểu của num vẫn là number)
-console.log(typeof result);      // "42.00" (Kết quả trả về là một chuỗi)
+const person1 = new Person('TanDy', 21);
+person1.greet();
