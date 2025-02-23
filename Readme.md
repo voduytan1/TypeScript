@@ -9,7 +9,7 @@ Vì static method chỉ tồn tại trên class, nên nó không thể truy cậ
 
 Static method cũng có thể kế thừa và override
 
-** Thường dùng làm các helper **
+**Thường dùng làm các helper**
 
 ## Readonly
 Tạo giá trị mà không bị xóa, thay đổi, chỉ có thể đọc
