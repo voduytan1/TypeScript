@@ -84,7 +84,7 @@ ví dụ:
 
 Nếu chỉ khai báo tên các thành phần mà không gán giá trị thì TypeScript sẽ tự động gán là '0,1,2....' với kiểu dữ liệu number.
 
-** Reverse Mapping **
+**Reverse Mapping**
 
 Bạn có thể lấy tên của enum thông qua giá trị của nó
 
@@ -99,7 +99,7 @@ Ví dụ:
 `console.log(Status[1]); // Output: "Active"`
 `let color: Color = Color.Red;``
 
-** Bạn có thể dùng enum trong các hàm **
+**Bạn có thể dùng enum trong các hàm**
 `Ví dụ:`
 `enum OrderStatus {`
 `  Pending = "Pending",`
